@@ -67,7 +67,7 @@ const init = () => {
                 choices: [
                     'Engineer',
                     'Intern',
-                    'Create Team'
+                    'Generate Team Profile'
                 ],
             }
         ])
@@ -85,7 +85,7 @@ const init = () => {
                 case 'Intern':
                     addIntern(teamInfo);
                     break;
-                case "Create Team":
+                case "Generate Team":
                     finalizeTeam(teamInfo);
             }
         })
@@ -154,7 +154,7 @@ const addEngineer = (teamInfo) => {
                 choices: [
                     'Engineer',
                     'Intern',
-                    'Create Team'
+                    'Generate Team Profile'
                 ]
             }
         ]).then(engineerInfo => {
@@ -170,7 +170,7 @@ const addEngineer = (teamInfo) => {
                 case 'Intern':
                     addIntern(teamInfo);
                     break;
-                case 'Create Team':
+                case 'Generate Team Profile':
                     finalizeTeam(teamInfo)
             }
         })
@@ -237,7 +237,7 @@ const addIntern = (teamInfo) => {
             choices: [
                 'Engineer',
                 'Intern',
-                'Create Team'
+                'Generate Team Profile'
             ]
         }
     ]).then(internInfo => {
@@ -253,7 +253,7 @@ const addIntern = (teamInfo) => {
             case 'Intern':
                 addIntern(teamInfo);
                 break;
-            case 'Create Team':
+            case 'Generate Team Profile':
                 finalizeTeam(teamInfo);
         }
     })
