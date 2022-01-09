@@ -1,5 +1,5 @@
 const managerCard = (teamInfo) => {
-    const [manager] = teamInfo;
+    const [Manager] = teamInfo;
 
     return `
     <div class='column'>
@@ -9,7 +9,7 @@ const managerCard = (teamInfo) => {
             <div class="media-left">
             </div>
             <div class="media-content has-background-info py-2">
-                <p class="title is-4 has-text-white-bis"> ${manager.getName()}</p>
+                <p class="title is-4 has-text-white-bis"> ${Manager.name}</p>
                 <p class="title is-5 has-text-white-bis"><i class="fas fa-mug-hot"></i> Manager</p>
             </div>
           </div>                       
